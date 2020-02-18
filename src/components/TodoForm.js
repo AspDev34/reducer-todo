@@ -4,7 +4,7 @@ const TodoForm = (props) => {
 
     const [newTodo, setNewTodo] = useState('');
 
-    const handleChange = event => {
+    const handleChange = (event) => {
         setNewTodo(event.target.value)
     };
 
