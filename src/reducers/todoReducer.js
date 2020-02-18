@@ -11,7 +11,7 @@ export const initialState = {
     ]
 };
 
-const todoReducer = (state, action) => {
+export const todoReducer = (state, action) => {
     console.log(state.todoData);
     switch (action.type) {
         case 'ADD_ITEM':
@@ -38,4 +38,3 @@ const todoReducer = (state, action) => {
     };
 };
 
-export default todoReducer;
