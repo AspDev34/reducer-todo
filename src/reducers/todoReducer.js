@@ -1,4 +1,4 @@
-export const initialState = {
+export const initialState = { //my initial state value.
     todoData: [
         {item: 'Keep learning code',
         completed: false,
@@ -8,7 +8,8 @@ export const initialState = {
         completed: false,
         id: Date.now()
         }
-    ]
+    ],
+    
 };
 
 export const todoReducer = (state, action) => {

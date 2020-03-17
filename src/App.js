@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   const [state, dispatch] = useReducer(todoReducer, initialState);
-
+  
   const makeTodo = (item) => dispatch({type:'ADD_ITEM', playload: item});
   const toggleTodo = (id) => dispatch({type:'TOGGLE_ITEM', playload: id});
   const clearCompleted = () => dispatch({type:'CLEAR_COMPLETED'});
